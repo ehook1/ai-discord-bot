@@ -62,23 +62,29 @@ Once the bot is running, you can interact with it using:
 !fact - Get a random fact
 Mention the bot using @AxoGPT
 Include "axogpt" in your message
-Troubleshooting
-Common Issues:
-ModuleNotFoundError:
-Make sure you've installed all required packages
-Run pip install -r requirements.txt if using a requirements file
-Invalid Token:
-Double-check your .env file
-Ensure there are no spaces around the = signs
-Make sure the token values are correct
-Permission Issues:
-Check if the bot has the correct permissions in your Discord server
-Verify all required intents are enabled in the Discord Developer Portal
-API Key Issues:
-Verify API key is valid
-Check if you have sufficient quota/credits
-Support
-Discord Developer Documentation: discord.dev
-Google AI Documentation: Google AI docs
+```
+## Troubleshooting
+### Common Issues:
+
+#### ModuleNotFoundError:
+- Make sure you've installed all required packages
+- Run `pip install -r requirements.txt` if using a requirements file
+
+#### Invalid Token:
+- Double-check your `.env` file
+- Ensure there are no spaces around the `=` signs
+- Make sure the token values are correct
+
+#### Permission Issues:
+- Check if the bot has the correct permissions in your Discord server
+- Verify all required intents are enabled in the Discord Developer Portal
+
+#### API Key Issues:
+- Verify API key is valid
+- Check if you have sufficient quota/credits
+
+### Support
+- Discord Developer Documentation: [discord.dev](https://discord.dev)
+- Google AI Documentation: [Google AI docs](https://ai.google.dev/docs)
 
 fin
