@@ -32,7 +32,11 @@ pip install python-dotenv
 
 ## Step 4: Set Up Environment Variables
 Create a file named .env in your project directory:
-
+Add your bot token and google gemini api key to the .env file as follows:
+```
+DISCORD_TOKEN=your_bot_token
+GOOGLE_API_KEY=your_google_gemini_api_key
+```
 ### Step 5: Invite Bot to Server
 1. Go back to Discord Developer Portal
 2. Select your application
