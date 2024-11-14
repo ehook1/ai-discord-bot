@@ -18,7 +18,7 @@
 
 ## Step 2: Get API Key
 ### Google Gemini API Key:
-1. Go to [Google AI Studio](https://ai.google.com).
+1. Go to [Google AI Studio](https://aistudio.google.com/welcome).
 2. Create a new API key.
 3. Copy the key.
 
