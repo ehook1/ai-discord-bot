@@ -1,48 +1,62 @@
-AxoGPT Discord Bot Setup Guide
-Prerequisites
-Python 3.8 or higher
-A Discord account
-A Google Cloud account (for Gemini API)
-Step 1: Create Discord Bot
-Go to Discord Developer Portal
-Click "New Application" and give it a name
-3. Go to the "Bot" section
-Click "Add Bot"
-Under Privileged Gateway Intents, enable:
-Message Content Intent
-Server Members Intent
-Save changes
-Copy the bot token (you'll need this later)
-Step 2: Get API Key
-Google Gemini API Key:
-Go to Google AI Studio
-Create a new API key
-Copy the key
-Step 3: Install Required Packages
+# AxoGPT Discord Bot Setup Guide
+
+## Prerequisites
+- Python 3.8 or higher
+- A Discord account
+- A Google Cloud account (for Gemini API)
+
+## Step 1: Create Discord Bot
+1. Go to the [Discord Developer Portal](https://discord.com/developers/applications).
+2. Click **"New Application"** and give it a name.
+3. Go to the **"Bot"** section.
+4. Click **"Add Bot"**.
+5. Under **Privileged Gateway Intents**, enable the following:
+   - **Message Content Intent**
+   - **Server Members Intent**
+6. Save changes.
+7. Copy the bot token (you'll need this later).
+
+## Step 2: Get API Key
+### Google Gemini API Key:
+1. Go to [Google AI Studio](https://ai.google.com).
+2. Create a new API key.
+3. Copy the key.
+
+## Step 3: Install Required Packages
+Run the following commands to install the necessary packages:
+```bash
 pip install discord.py
 pip install google-generativeai
 pip install python-dotenv
-Step 4: Set Up Environment Variables
+```
+
+## Step 4: Set Up Environment Variables
 Create a file named .env in your project directory:
-Step 5: Invite Bot to Server
-Go back to Discord Developer Portal
-Select your application
-Go to OAuth2 → URL Generator
-Select the following scopes:
-bot
+
+### Step 5: Invite Bot to Server
+1. Go back to Discord Developer Portal
+2. Select your application
+3. Go to OAuth2 → URL Generator
+4. Select the following scopes:
+   - bot
 applications.commands
-Select bot permissions:
-Send Messages
-Read Messages/View Channels
-Send Messages in Threads
+5. Select bot permissions:
+   - Send Messages
+   - Read Messages/View Channels
+   - Send Messages in Threads
 Copy the generated URL and open it in a browser
-Select your server and authorize the bot
-Step 6: Run the Bot
-Save the bot code as discordai.py
-Run the bot:
+6. Select your server and authorize the bot
+
+## Step 6: Run the Bot
+1. Save the bot code as discordai.py
+2. Run the bot:
 Bash
-Usage
+```bash
+python discordai.py
+```
+
 Once the bot is running, you can interact with it using:
+```bash
 !help - Show available commands
 !joke - Get a random joke
 !fact - Get a random fact
